@@ -3,10 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Hotel Landing Page</title>
     <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- Header -->
+    <header class="bg-white py-6">
+        <nav class="container flex justify-between items-center">
+            <div class="hidden sm:block md:hidden lg:flex gap-5 lg:w-1/3">
+                <div class="flex justify-center items-center gap-3 border border-color-border rounded-xl p-2">
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                    <i class="fa-solid fa-language text-2xl text-color-primary"></i>
+                </div>
+         
+                <div class="flex justify-center items-center gap-3 border border-color-border rounded-xl p-2">
+                    <div class="flex gap-2">
+                        <p class="text-sm">ثبت‌ نام</p>
+                        <div class="border-r border-color-border"></div>
+                    </div>
+                    <p class="text-color-secndary text-sm">ورود</p>
+                    <i class="fa-regular fa-user text-xl text-color-primary"></i>
+                </div>
+
+                <div class="flex justify-center items-center border border-color-border rounded-xl p-2">
+                    <p>۰۲۱-۲۷۲۰</p>
+                    <i class="fa-solid fa-phone text-xl text-color-primary"></i>
+                </div>
+            </div>
+            
+            <div class="flex justify-center items-start gap-2 lg:hidden">
+                <div class="flex justify-center items-center gap-3 border border-color-border rounded-xl p-2">
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                    <i class="fa-solid fa-language text-2xl"></i>
+                </div>
+                <div class="flex justify-center items-center gap-3 border border-color-border rounded-xl p-2">
+                    <i class="fa-regular fa-user text-xl"></i>
+                </div>
+                <div class="flex justify-center items-center border border-color-border rounded-xl p-2">
+                    <i class="fa-solid fa-phone text-xl"></i>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center gap-6">
+                <ul class="hidden lg:flex space-x-6 text-sm">
+                    <li><a href="#" class="text-primary  hover:text-black">ارتباط با ما</a></li>
+                    <li><a href="#" class="text-black hover:text-primary">رویداد ها</a></li>
+                    <li><a href="#" class="text-black hover:text-primary">راهنمای گردشگری تهران</a></li>
+                    <li><a href="#" class="text-black hover:text-primary">
+                        <i class="fa-solid fa-chevron-down text-xs mr-2"></i>
+                        امکانات و خدمات</a>
+                    </li>
+                </ul>
+                <!-- Logo -->
+                <div>
+                    <img src="./src/logo.png" alt="">
+                </div>
+            </div>
+            <div class="lg:hidden">
+                <button id="menu-btn" class="text-3xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div class="border-b mt-5 border-color-border w-full"></div>
+        
+        <!-- Mobile Menu --> 
+        <div id="mobile-menu" class="hidden lg:hidden absolute top-9% left-0 w-full h-[500px] z-50
+           bg-color-primary flex flex-col items-center justify-center space-y-10">
+           <a href="#" class="text-white hover:text-black">ارتباط با ما</a>
+           <a href="#" class="text-white hover:text-black">رویداد ها</a>
+           <a href="#" class="text-white hover:text-black">راهنمای گردشگری تهران</a>
+           <a href="#" class="text-white hover:text-black">
+            <i class="fa-solid fa-chevron-down text-xs mr-2"></i>
+            امکانات و خدمات</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- hero-section  -->
+        <section>
+            <div class="container relative py-14">
+                <div class="bg-color-primary rounded-3xl w-full flex flex-col md:flex-row justify-between gap-5 items-center lg:h-[480px]">
+                    <div class="text-white drop-shadow-md flex flex-col justify-center items-center md:w-3/5">
+                        <p class="font-bold text-2xl md:text-5xl">هتل پارسیان آزادی</p>
+                        <p class="font-light text-xl md:text-4xl">انتخاب نخست بلندپایگان</p>
+                    </div>
+
+                    <div class="md:w-1/2 w-3/4 flex justify-end items-end lg:mb-10">
+                        <img src="./src/hero-section.png" class="bg-cover bg-center" alt="">
+                    </div>
+                </div>
+
+                <div class="md:w-4/6 w-3/5 absolute left-24 md:left-52 -bottom-32 md:bottom-5 flex flex-col md:flex-row justify-center gap-6 
+                    items-center bg-white rounded-2xl shadow-md py-8">
+                    <div class="">
+                        <button class="bg-gradient-to-b from-gradientStart to-gradientEnd text-white
+                           rounded-lg px-8 py-3">جستجو</button>
+                    </div>
+                    <div class="md:px-12 px-24 py-3 bg-color-white-dark rounded-lg">
+                        <p>۱ مسافر، ۱ اتاق</p>
+                    </div>
+                    <div class="w-72 flex justify-evenly text-color-secndary gap-5 py-3 bg-color-white-dark rounded-lg">
+                        <p>تاریخ خروج</p>
+                        <p>۱ مسافر، ۱ اتاق</p>
+                    </div>
+                    <p class="text-color-primary text-lg font-bold">رزرو اتاق</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section1 -->
+
+        <section>
+            <div class="container py-20 mt-32 md:mt-20">
+                <div class="flex flex-col md:flex-row gap-10 justify-between items-center">
+                    <div class="md:w-1/2 w-full bg-color-primary relative 
+                        flex justify-end items-center rounded-2xl shadow-md h-48 md:h-[310px]">
+                        <div class="w-3/5 absolute bottom-0 -left-0 ">
+                            <img src="./src/section1.png" class="rounded-bl-3xl" alt="">
+                        </div>
+                        <div class="w-1/2 text-center px-10">
+                            <div class="w-40 text-center py-2 flex justify-center items-center gap-2
+                                bg-gradient-to-t from-gradient-start to-gradient-end rounded-xl">
+                                <i class="fa-solid fa-circle-play text-2xl"></i>
+                                <button class="pb-2">
+                                   <p class="font-bold">ویدئو معرفی</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex flex-col justify-start items-end">
+                        <div class="text-right">
+                            <p class="font-bold text-3xl mb-6">هتل پارسیان  آزادی،  پیشرو در ارائه خـدمات <br> نـوین  .هتـلداری</p>
+                            <p class="font-light mb-5">هتل پارسیان آزادی یا هایت سابق از سال ۱۳۷۰ تحت نظر گروه هتل‌های پارسیان فعالیت می کند. این هتل که یکی
+                              از بزرگترین و بلندترین هتل‌های بین‌المللی پنج ستاره ایران است در سال 
+                              ۱۳۹۱ با هزینه‌ای بالغ بر ۸۰ میلیارد تومان به طور کامل بازسازی شد.
+                            </p>
+                        </div>
+                        <div class="flex gap-5 mt-4">
+                            <div class="flex flex-col px-4 py-2 bg-color-white-dark items-end text-right">
+                                <p>۲۶ طبقه</p>
+                                <p>مشرف به رشته کوه‌های البرز</p>
+                            </div>
+                            <div class="flex flex-col items-end px-4 py-2 bg-color-white-dark">
+                                <p>۴۷۵ واحد اقامتی</p>
+                                <p>با انواع منظره ، چیدمان و امکانات</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+
+        <section>
+            <div class="container py-10">
+                <p class="text-center mb-5 text-4xl font-bold">اتاق‌ها و سوئیت‌‌ها</p>
+                <div class="flex flex-wrap gap-5 justify-center mt-10 items-center">
+                    <div class="px-4 py-1 text-right border border-color-border hover:border-color-primary rounded-xl">
+                        <p class="text-sm font-bold hover:text-color-primary">سوئیت پرزندیتال</p>
+                        <p class="text-xs">واقع در طبقه ۲۴</p>
+                    </div>
+                    <div class="px-4 py-1 text-right border border-color-border hover:border-color-primary rounded-xl">
+                        <p class="text-sm font-bold hover:text-color-primary">لسوئیت دوبلکس</p>
+                        <p class="text-xs">واقع در طبقه ۲۴</p>
+                    </div>
+                    <div class="px-4 py-1 text-right border border-color-border hover:border-color-primary rounded-xl">
+                        <p class="text-sm font-bold hover:text-color-primary">لسوئیت رویال</p>
+                        <p class="text-xs">طبقه ۲۴</p>
+                    </div>
+                    <div class="px-4 py-1 text-right border border-color-border hover:border-color-primary rounded-xl">
+                        <p class="text-sm font-bold hover:text-color-primary">سوئیت پرزندیتال</p>
+                        <p class="text-xs">واقع در طبقه ۲۴</p>
+                    </div>
+                    <div class="px-4 py-1 text-right border border-color-border hover:border-color-primary rounded-xl">
+                        <p class="text-sm font-bold hover:text-color-primary">سوئیت پرزندیتال</p>
+                        <p class="text-xs">واقع در طبقه ۲۴</p>
+                    </div>
+                </div>
+
+                <div class="w-full flex flex-col md:flex-row gap-4 border-2 mt-8 border-color-border rounded-xl">
+                    <div class="md:w-3/5">
+                        <p class="text-right text-3xl text-color-primary p-5 font-bold">اتاق استاندارد</p>
+                        <div class="border-b border-color-border"></div>
+                        <div class="flex flex-col md:flex-row text-right p-2">
+                            <div class="md:w-1/2 p-3">
+                                <p class="font-bold">اطلاعات تکمیلی</p>
+                                <div class="flex gap-2 font-light items-end pt-3 justify-end">
+                                    <p class="px-2 py-1 bg-color-white-dark rounded-lg">مساحت اتاق : ۲۷ متر</p>
+                                    <p class="px-2 py-1 bg-color-white-dark rounded-lg">مناسب برای ۱  تا ۲ نفر</p>
+                                </div>
+                                <p class="pt-3 font-light">سرویس روزانه اتاق</p>
+                                <div class="flex justify-center pt-20  items-center text-center">
+                                    <button class="w-full py-3 bg-gradient-to-b from-gradientStart to-gradientEnd text-white font-bold
+                                     rounded-xl">مشاهده و رزرو</button>
+                                </div>  
+                            </div>
+                            <div class="border-r border-color-border"></div>
+                            <div class="md:w-1/2 pr-2">
+                                <p class="font-bold">امکانات اتاق</p>
+                                <div class="flex gap-2 font-light items-end pt-5 justify-end">
+                                    <p class="px-2 py-1 bg-color-white-dark rounded-lg">مساحت اتاق : ۲۷ متر</p>
+                                    <p class="px-2 py-1 bg-color-white-dark rounded-lg">مناسب برای ۱  تا ۲ نفر</p>
+                                </div>
+                                <div class="flex gap-2 font-light items-end pt-5 justify-end">
+                                    <p class="px-2 py-1 bg-color-white-dark rounded-lg">مساحت اتاق : ۲۷ متر</p>
+                                    <p class="px-2 py-1 bg-color-white-dark rounded-lg">مناسب برای ۱  تا ۲ نفر</p>
+                                </div>
+                                <div class="flex gap-2 font-light items-end pt-5 justify-end">
+                                    <p class="px-2 py-1 bg-color-white-dark rounded-lg">مساحت اتاق : ۲۷ متر</p>
+                                    <p class="px-2 py-1 bg-color-white-dark rounded-lg">مناسب برای ۱  تا ۲ نفر</p>
+                                </div>
+                                <div class="flex gap-2 font-light items-end pt-5 justify-end">
+                                    <p class="px-2 py-1 bg-color-white-dark rounded-lg">مساحت اتاق : ۲۷ متر</p>
+                                    <p class="px-2 py-1 bg-color-white-dark rounded-lg">مناسب برای ۱  تا ۲ نفر</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/5">
+                        <img src="./src/section2.jpg" class="w-full h-full object-cover rounded-r-xl" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     
+
+    <script>
+        let menuBtn = document.getElementById('menu-btn');
+        let mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
 </body>
 </html>
