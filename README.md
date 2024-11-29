@@ -1,7 +1,7 @@
-# Portfolio Website
+# Hotel Landing Website
 
 ## Overview
-This is a portfolio website, built to showcase my projects, skills, and experiences as a designer. It includes various sections like About Me, Work, Projects, and Contact Information.
+This is a Landing website, built to showcase my projects, skills, and experiences as a designer. It includes various sections like About Me, Work, Projects, and Contact Information.
 
 The website is fully responsive and built with HTML, Tailwind CSS, and JavaScript to ensure seamless performance on both desktop and mobile devices.
 
